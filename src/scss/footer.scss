@@ -1,0 +1,128 @@
+.footer{
+  background: #161F49;
+  padding: 89px 0 90px 190px;
+  &__logo-img{}
+  &__big-box{
+    display: flex;
+  }
+  &__links{
+    display: flex;
+    column-gap: 92px;
+  }
+  &__menu{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+  }
+  &__list-link{
+    @include text($roboto,normal,normal,17px,25px);
+    color: white;
+    cursor: pointer;
+    position: relative;
+    &::after{
+      content: '';
+      width: 0;
+      height: 1px;
+      background: white;
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      transition: 0.3s;
+    }
+    &:hover::after{
+      width: 100%;
+    }
+  }
+  &__form-box{
+    margin: 60px 0 0 93px;
+  }
+  &__form-title{
+    @include text($roboto,normal,normal,36px,48px);
+    color: white;
+  }
+  &__form-subtitle{
+    @include text($roboto,normal,normal,18px,25px);
+    color: white;
+  }
+  &__form{
+    margin-top: 70px;
+  }
+  &__label{
+
+  }
+  &__input{
+    width: 293px;
+    height: 53px;
+    border: none;
+    outline: none;
+    padding: 22px 0 22px 6px;
+    background: none;
+    border-bottom: 1px solid white;
+    @include text($roboto,normal,normal,14px,17px);
+    color: white;
+    &::placeholder{
+      @include text($roboto,normal,normal,14px,17px);
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+  }
+  &__form-btn{
+    width: 191px;
+    height: 53px;
+    border: 1px solid white;
+    @include text($roboto,normal,normal,14px,17px);
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: none ;
+    margin-left: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover{
+      background: white;
+      color: #404040;
+    }
+  }
+  &__lil-box{
+    display: flex;
+    margin-top: 80px;
+    column-gap: 280px;
+  }
+  &__lil-text{
+    @include text($roboto,normal,normal,14px,23px);
+    color: white;
+  }
+  &__icons{
+    display: flex;
+    column-gap: 30px;
+  }
+  &__icon{
+    position: relative;
+    &:after{
+      content: '';
+      width: 0;
+      height: 1px;
+      background: white;
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      transition: 0.3s;
+    }
+    &:hover::after{
+      width: 100%;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

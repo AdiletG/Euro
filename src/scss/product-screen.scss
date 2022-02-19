@@ -1,0 +1,80 @@
+.product{
+  background: url("../img/product-screen/bg-img.png");
+  padding: 580px 0 85px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__section{
+    width: 100%;
+    display: flex;
+  }
+  &__big-prod{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 150px;
+  }
+  &__lil-prod{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+  }
+  &__description{
+    width: 81px;
+    @include text($roboto,normal,bold,16px,21px);
+    text-transform: uppercase;
+    color: #000000;
+    background: white;
+    border-radius: 18px;
+    text-align: center;
+  }
+  &__text{
+    @include text($roboto,normal,normal,36px,44px);
+    color: white;
+    margin-top: 16px;
+  }
+  &__title{
+    @include text($roboto,normal,normal,46px,48px);
+    color: white;
+    margin-top: 13px;
+  }
+  &__subtitle{
+    @include text($roboto,normal,normal,18px,25px);
+    color: white;
+    margin-top: 20px;
+  }
+  &__price{
+    @include text($roboto,normal,normal,18px,25px);
+    color: white;
+    margin-top: 33px;
+  }
+  &__btn{
+    width: 220px;
+    height: 52px;
+    @include text($roboto,normal,bold,14px,14px);
+    background:#2468FF;
+    color: white;
+    text-align: center;
+    border: none;
+    margin-top: 36px;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover{
+      background: #161F49;
+    }
+  }
+  &__link{
+    @include text($roboto,normal,normal,14px,16px);
+    color: white;
+    border-bottom: 1px solid white;
+    text-align: center;
+    text-transform: uppercase;
+    display:inline;
+    margin-top: 89px;
+    &:hover{
+      color: #2468FF;
+      border-bottom: 1px solid #2468FF;
+    }
+  }
+}

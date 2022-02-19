@@ -1,0 +1,56 @@
+.connect{
+  padding-top: 110px ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__description{
+    @include text($roboto,normal,normal,18px,21px);
+    text-align: center;
+    color: #404040;
+  }
+  &__amazon{
+    display: block;
+    margin: 21px auto 28px;
+  }
+  &__link{
+    @include text($roboto,normal,normal,18px,20px);
+    border-bottom: 1px solid #404040;
+    color: #404040;
+    &:hover{
+      color: #2468FF;
+      border-bottom: 1px solid  #2468FF;
+    }
+  }
+  &__title{
+    @include text($roboto,normal,normal,50px,60px);
+    text-align: center;
+    color: #404040;
+    margin-top: 116px;
+  }
+  &__subtitle{
+    @include text($roboto,normal,normal,15px,25px);
+    text-align: center;
+    color: #404040;
+    margin-top: 44px;
+  }
+  &__btn{
+    width: 244px;
+    height: 52px;
+    background: #2468FF;
+    @include text($roboto,normal,normal,14px,14px);
+    text-transform: uppercase;
+    color: white;
+    display: block;
+    margin: 78px auto 0;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover{
+      background: #161F49;
+    }
+  }
+  &__img{
+    display: block;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,13 @@
+.text{
+  padding: 200px 0 205px;
+  background: #404040;
+  &__title{
+    @include text($roboto,normal,normal,42px,48px);
+    color: white;
+    text-align: center;
+  }
+  &__img{
+    display: block;
+    margin: 49px auto 0;
+  }
+}

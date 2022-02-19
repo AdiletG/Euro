@@ -1,0 +1,36 @@
+.blue-screen{
+  padding: 117px 0 124px;
+  background:#161F49;
+  &__title{
+    @include text($roboto,normal,normal,50px,60px);
+    text-align: center;
+    color: white;
+    margin-bottom: 44px;
+  }
+  &__subtitle{
+    @include text($roboto,normal,normal,18px,25px);
+    text-align: center;
+    color: white;
+    margin-bottom: 38px;
+  }
+  &__btn{
+    width: 220px;
+    height: 52px;
+    @include text($roboto,normal,normal,14px,14px);
+    color: white;
+    background: #2468FF;
+    display: block;
+    margin:0 auto 50px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover{
+      background: white;
+      color: black;
+    }
+  }
+  &__img{
+    display: block;
+    margin: 0 auto;
+  }
+}

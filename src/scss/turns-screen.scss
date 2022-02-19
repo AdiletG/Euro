@@ -1,0 +1,84 @@
+.turns{
+  padding: 116px 0 0 0;
+  &__title{
+    @include text($roboto,normal,normal,50px,60px);
+    text-align: center;
+    color: #404040;
+  }
+  &__tabs{
+    margin: 124px 0 0 0;
+  }
+  &__menu{
+    width: 10%;
+    display: flex;
+    column-gap: 30px;
+    transform: translate(800px,20px);
+  }
+  &__list{
+    @include text($roboto,normal,normal,14px,19px);
+    color: #999999;
+    border-bottom: #999999;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover{
+      color: #2468FF;
+      border-bottom: 1px solid #2468FF;
+    }
+    &_active{
+      color: #2468FF;
+      border-bottom: 1px solid #2468FF;
+    }
+  }
+  &__content{
+    display: none;
+    transition: 3s;
+    &_active{
+      display: block;
+      transition: 3s;
+
+    }
+  }
+  &__contents{
+    display: flex;
+  }
+  &__content-text{
+    margin-left: 80px;
+  }
+  &__content-img{
+   width:  720px;
+   height:  488px;
+  }
+  &__content-title{
+    @include text($roboto,normal,normal,36px,52px);
+    color: #404040;
+    margin-top: 34px;
+  }
+  &__content-description{
+    @include text($roboto,normal,normal,18px,25px);
+    color: #646565;
+    margin-top: 28px;
+  }
+  &__content-subtitle{
+    @include text($roboto,normal,normal,18px,25px);
+    color: #646565;
+    margin-top: 14px;
+  }
+  &__content-btn{
+    width: 243px;
+    height: 52px;
+    background: #2468FF;
+    cursor: pointer;
+    border: none;
+    @include text($roboto,normal,normal,13px,14px);
+    text-align: center;
+    letter-spacing: 0.11px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 30px;
+    transition: .3s;
+    &:hover{
+      background: #161F49;
+    }
+  }
+}

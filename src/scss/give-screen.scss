@@ -1,0 +1,18 @@
+.give{
+  padding: 217px 0 119px;
+&__title{
+  @include text($roboto,normal,normal,50px,60px);
+  text-align: center;
+  color: #404040;
+}
+&__subtitle{
+  @include text($roboto,normal,normal,18px,25px);
+  text-align: center;
+  color: #404040;
+  margin-top: 44px;
+}
+&__img{
+  display: block;
+  margin: 78px auto 0;
+}
+}

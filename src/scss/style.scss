@@ -1,0 +1,74 @@
+@import "../fonts/roboto/stylesheet.css";
+@import "change";
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  scroll-behavior: smooth;
+}
+
+.shipping{
+  width: 100%;
+  background: #161F49;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  &__title{
+    @include text($roboto,normal,normal,14px,23px);
+    text-align: center;
+    color: #ffffff;
+    display: block;
+    //animation-name: title-move;
+    //animation-duration: 5s;
+    //animation-timing-function: linear;
+    //animation-iteration-count: infinite;
+  }
+  &__second-title{
+    @include text($roboto,normal,normal,14px,23px);
+    text-align: center;
+    color: #000000;
+    display: none;
+
+
+  }
+}
+
+.grey-block{
+  width: 100%;
+  height: 96px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+//
+//@keyframes title-move {
+//  0%{
+//    display: block;
+//    transform: translateY(-100px);
+//  }
+//  100%{
+//    display: none;
+//    transform: translateY(-100px);
+//  }
+//}
+//@keyframes second-title-move {
+//  0%{
+//    display: block;
+//    transform: translateY(-100px);
+//  }
+//  100%{
+//    display: none;
+//    transform: translateY(-100px);
+//  }
+//}
+
+
+
+@import "header";
+@import "main";
+@import "footer";
+
+@import "overlay-popup";

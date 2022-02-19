@@ -1,0 +1,44 @@
+.helper{
+  padding: 120px 0;
+  &__title{
+    @include text($roboto,normal,normal,50px,60px);
+    text-align: center;
+    color: #404040;
+  }
+  &__subtitle{
+    @include text($roboto,normal,normal,18px,25px);
+    text-align: center;
+    color: #404040;
+    margin-top: 35px;
+  }
+  &__btn{
+    width: 220px;
+    height: 52px;
+    @include text($roboto,normal,normal,13px,14px);
+    text-align: center;
+    letter-spacing: 0.11px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #2468FF;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 45px auto 94px;
+    transition: .3s;
+    &:hover{
+      background: #161F49;
+    }
+  }
+  &__cards{
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+  }
+  &__text{
+    display: flex;
+    align-items: center;
+    column-gap: 18px;
+    @include text($roboto,normal,normal,18px,25px);
+    color: #404040;
+  }
+}

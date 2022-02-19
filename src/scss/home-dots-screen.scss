@@ -1,0 +1,90 @@
+.home{
+  padding: 68px 0 118px ;
+  background: #F7F7F7;
+  &__title{
+    @include text($roboto,normal,normal,50px,60px);
+    color: #404040;
+    text-align: center;
+  }
+  &__dot-img{
+    display: block;
+    margin: 39px auto 0;
+  }
+  &__dots-menu{
+    display: flex;
+    column-gap: 14px;
+    align-items: center;
+    position: relative;
+    bottom: -500px;
+    left: 0;
+    z-index: 3;
+    margin: 0 auto;
+  }
+  &__dots{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__dots-elements{
+    display: flex;
+    column-gap: 14px;
+    align-items: center;
+  }
+  &__dots-element{
+    @include text($roboto,normal,normal,21px,29px);
+    color: rgba(64, 64, 64, 0.3);
+    padding: 16px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(64, 64, 64, 0.3);
+    cursor: pointer;
+    transition: .3s;
+    &:hover{
+      border: 2px solid #404040;
+      color: #404040;
+    }
+  }
+  &__dots-click{
+    border: 2px solid #404040;
+    color: #404040;
+  }
+  &__dots-list{
+    @include text($roboto,normal,normal,18px,21px);
+    color: #404040;
+
+  }
+  &__dots-content{
+    display: none;
+    position: relative;
+    &_active{
+      display: block;
+    }
+  }
+  &__dots-content-img{
+    display: block;
+    margin: 0 auto 20px;
+  }
+  &__content-description{
+    @include text($roboto,normal,normal,16px,20px);
+    color: rgba(64, 64, 64, 0.3);
+    text-align: center;
+  }
+  &__dots-btn{
+    display: block;
+    width: 220px;
+    height: 52px;
+    background: #2468FF;
+    border: none;
+    @include text($roboto,bold,normal,14px,14px);
+    text-align: center;
+    color: white;
+    margin: 100px auto 0;
+    cursor: pointer;
+    transition: .3s;
+    &:hover{
+      background: #161F49;
+    }
+  }
+}

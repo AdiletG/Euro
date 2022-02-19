@@ -1,0 +1,39 @@
+.welcome{
+  background: url("../img/welcome-screen/bg-image.png");
+  position: relative;
+  padding: 120px 0 270px;
+  &__title{
+    @include text($roboto,normal,normal,72px,80px);
+    color: #FFFFFF;
+    text-align: center;
+  }
+  &__subtitle{
+    @include text($roboto,normal,normal,21px,29px);
+    color: #FFFFFF;
+    text-align: center;
+    margin: 24px 0 0;
+  }
+  &__btn{
+    @include text($roboto,normal,normal,14px,13px);
+    color: white;
+    border: 1px solid #ffffff;
+    width: 226px;
+    height: 51px;
+    background: none;
+    display: block;
+    margin: 16px auto 0 ;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover{
+      color: #404040;
+      background: white;
+    }
+  }
+  &__product-img{
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    bottom: -150px;
+  }
+}

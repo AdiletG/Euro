@@ -1,0 +1,47 @@
+.info-card{
+  padding: 116px 0 125px;
+  &__title{
+    @include text($roboto,normal,normal,50px,60px);
+    text-align: center;
+    color: #404040;
+  }
+  &__cards{
+    margin: 84px auto 0 ;
+    display: flex;
+    justify-content: center;
+    column-gap: 150px;
+  }
+  &__card{
+    padding: 0 11px 5px 11px;
+  }
+  &__card-icon{}
+  &__card-title{
+    @include text($roboto,normal,normal,21px,24px);
+    color: #404040;
+    margin: 34px 0 0 0;
+  }
+  &__card-subtitle{
+    @include text($roboto,normal,normal,18px,25px);
+    color: #404040;
+    margin: 17px 0 0 0;
+    &_1-st{
+      margin-bottom: 75px;
+    }
+    &_2-nd{
+      margin-bottom: 26px;
+    }
+    &_3-rd{
+      margin-bottom: 102px;
+    }
+  }
+  &__card-link{
+    @include text($roboto,bold,normal,14px,16px);
+    color: #404040;
+    border-bottom: 1px solid #404040;
+    transition: 0.3s;
+    &:hover{
+      color: #2468FF;
+      border-bottom: 1px solid #2468FF;
+    }
+  }
+}

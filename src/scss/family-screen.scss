@@ -1,0 +1,27 @@
+.family{
+  background: url("../img/family-screen/bg-img.png");
+  padding: 111px 0 114px;
+&__title{
+  @include text($roboto,normal,normal,50px,60px);
+  text-align: center;
+  color: white;
+}
+&__btn{
+  width: 234px;
+  height: 52px;
+  @include text($roboto,normal,normal,14px,14px);
+  text-align: center;
+  letter-spacing: 0.11px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #2468FF;
+  cursor: pointer;
+  border: none;
+  display: block;
+  margin: 83px auto 0;
+  transition: .3s;
+  &:hover{
+    background: #161F49;
+  }
+}
+}
